@@ -6,6 +6,7 @@
 - Java 11
 - Spring Boot
 - Spring Web
+- Spring Kafka
 - Gradle
 - Docker-compose
 
