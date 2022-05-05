@@ -30,5 +30,8 @@ java -jar build/libs/spring-kafka-example.jar
 
 # Отправка сообщения
 curl -d "message=TestMessage" -X POST http://localhost:82/api/v1/kafka/publish
+# или
+curl -d "userId=1&firstName=Zxc&lastName=Test" -X POST http://localhost:82/api/v1/kafka/user
+
 ```
 
