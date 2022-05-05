@@ -33,6 +33,11 @@ configurations {
     }
 }
 
+tasks.named("bootJar") {
+    mainClass = 'org.devalurum.kafka.example.SpringKafkaApplication'
+    archiveName = "$baseName.$extension"
+}
+
 tasks.named('test') {
     useJUnitPlatform()
 }
