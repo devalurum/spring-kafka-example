@@ -12,7 +12,7 @@ public class KafkaProducerController {
 
     private final KafkaProducerService producerService;
 
-    @GetMapping(value = "/publish")
+    @PostMapping(value = "/publish")
     public void sendMessageToKafkaTopic(@RequestParam("message") String message) {
         this.producerService.sendMessage(message);
     }

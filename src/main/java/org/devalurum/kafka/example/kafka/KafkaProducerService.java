@@ -31,7 +31,7 @@ public class KafkaProducerService {
         future.addCallback(new ListenableFutureCallback<>() {
             @Override
             public void onSuccess(SendResult<String, String> result) {
-                log.info("Sent message: '{}' with offset: {}" + message, result.getRecordMetadata().offset());
+                log.info("Sent message: '{}' with offset: {}", message, result.getRecordMetadata().offset());
             }
 
             @Override
