@@ -8,6 +8,7 @@
 - Spring Web
 - Spring Kafka
 - Gradle
+- Lombok
 - Docker-compose
 
 ## Сборка и запуск приложения
