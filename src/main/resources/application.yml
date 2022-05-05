@@ -1,0 +1,19 @@
+server:
+  port: 82
+
+spring:
+  application:
+    name: spring-kafka-example
+
+kafka:
+  server: localhost:29092
+  general:
+    topic:
+      name: test-log
+      group:
+        id: group_id
+  user:
+    topic:
+      name: user-log
+      group:
+        id: group_id
